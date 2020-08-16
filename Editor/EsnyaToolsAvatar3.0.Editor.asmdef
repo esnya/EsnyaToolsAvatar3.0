@@ -1,0 +1,16 @@
+{
+    "name": "EsnyaToolsAvatar3.0.Editor",
+    "references": [
+        "EsnyaToolsAvatar3.0.Scripts"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
