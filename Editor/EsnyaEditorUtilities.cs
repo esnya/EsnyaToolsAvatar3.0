@@ -29,6 +29,13 @@ namespace EsnyaFactory
       return (T)EditorGUILayout.EnumPopup(label, value);
     }
 
+    static public DefaultAsset AssetDirectoryField(string label, DefaultAsset value) {
+      var newValue = ObjectField(label, value, false);
+      if (newValue != null && AssetDatabase.IsValidFolder(AssetDatabase.GetAssetPath(newValue))) {
+          return newValue;
+      }
+      return value;
+    }
     static public void Button(string label, System.Action action)
     {
       if (GUILayout.Button(label)) {
