@@ -16,7 +16,7 @@ jobs:
       with:
         submodules: true
     - name: Build project
-      run: zip --junk-paths EsnyaToolsAvatar3_0.zip .
+      run: zip -r --junk-paths EsnyaToolsAvatar3_0.zip ./
     - name: Release
       uses: fnkr/github-action-ghr@v1
       if: startsWith(github.ref, 'refs/tags/')
