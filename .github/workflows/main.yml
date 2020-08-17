@@ -12,13 +12,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
       with:
-        fetch-depth: 2
+        submodules: true
+    - name: Build project
+      run: zip --junk-paths EsnyaToolsAvatar3_0.zip .
     - name: Release
       uses: fnkr/github-action-ghr@v1
       if: startsWith(github.ref, 'refs/tags/')
       env:
         GHR_COMPRESS: zip
-        GHR_PATH: .
+        GHR_PATH: EsnyaToolsAvatar3_0.zip
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
