@@ -15,8 +15,12 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: true
-    - name: Build project
-      run: zip -r --junk-paths EsnyaToolsAvatar3_0.zip ./
+    - uses: actions/checkout@master
+    - name: Archive Release
+      uses: thedoctor0/zip-release@master
+      with:
+        filename: 'EsnyaToolsAvatar3_0.zip'
+        exclusions: '*.git*'
     - name: Release
       uses: fnkr/github-action-ghr@v1
       if: startsWith(github.ref, 'refs/tags/')
