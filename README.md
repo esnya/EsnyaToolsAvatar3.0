@@ -17,11 +17,14 @@ This tool replaces the same Animation and BlendTree in a given AnimatorControlle
 ## Asset Renamer
 A tool to rename asset files by pattern in a directory.
 
-### View Position Visualizer.
+### View Position Visualizer
 A tool to display Gizmo in order to adjust the ViewPosition to the correct position, and to adjust the animation while moving the Upright.
 
-### Crunch All.
+### Crunch All
 This tool enables CrunchCompression for all Texture2D in a project. Note that it doesn't stop or return when pressed.
+
+### BlendTree Creator
+Create new asset of BlendTree.
 
 # EsnyaToolsAvatar3.0 (Japanese Document)
 VRChat Avatar 3.0 用の Unity Editor ユーティリティパッケージ
@@ -46,3 +49,6 @@ ViewPosition を正しい位置に合わせるための Gizmo を表示するツ
 
 ### Crunch All
 プロジェクト内の全ての Texture2D の CrunchCompression を有効化するツール。押したら止まらないし戻らないので注意。
+
+### BlendTree Creator
+新しいBlendTreeをアセットとして作成する。
