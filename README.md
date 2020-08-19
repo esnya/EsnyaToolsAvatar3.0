@@ -26,6 +26,8 @@ This tool enables CrunchCompression for all Texture2D in a project. Note that it
 ### BlendTree Creator
 Create new asset of BlendTree.
 
+### VRCCam Patcher
+
 # EsnyaToolsAvatar3.0 (Japanese Document)
 VRChat Avatar 3.0 用の Unity Editor ユーティリティパッケージ
 
@@ -52,3 +54,6 @@ ViewPosition を正しい位置に合わせるための Gizmo を表示するツ
 
 ### BlendTree Creator
 新しいBlendTreeをアセットとして作成する。
+
+### VRCCam Patcher
+VRCCamの設定をいい感じにしておくツール。
